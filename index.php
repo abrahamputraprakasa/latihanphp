@@ -1,4 +1,5 @@
 <html>
+
 <head>
     <style>
         .atas {
@@ -10,9 +11,14 @@
         }
     </style>
 </head>
+
 <body>
     <?php
-        $sekarang = date('Y-m-d H:i:s');
+    $sekarang = date('Y-m-d H:i:s');
+    $user = '';
+    if (isset($_GET['user'])) {
+        $user = $_GET['user'];
+    }
     ?>
     <?php if (false) : ?>
         <div class="atas">
@@ -26,12 +32,17 @@
     <?php else : ?>
         <div class="bawah">
             <div>
-                Halo User
+                Halo <?= $user; ?>
             </div>
             <div>
                 <?= $sekarang; ?>
             </div>
         </div>
+        <form action="submit.php" method="POST">
+            <input type="text" name="user"></input>
+            <input type="text" name="email"></input>
+            <button>Submit</button>
+        </form>
     <?php endif ?>
 </body>
 
