@@ -12,7 +12,7 @@
 </head>
 <body>
     <?php
-        $sekarang = date('Y m d H:i:s');
+        $sekarang = date('Y-m-d H:i:s');
     ?>
     <?php if (false) : ?>
         <div class="atas">
