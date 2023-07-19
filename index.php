@@ -73,13 +73,16 @@
             <div>
                 Halo <?= $user; ?>
             </div>
+            <div id="welcome">
+                Selamat datang di project latihan
+            </div>
             <div>
                 <?= $sekarang; ?>
             </div>
         </div>
         <form action="submit.php" method="POST">
-            <input type="text" name="user"></input>
-            <input type="text" name="email"></input>
+            <input type="text" name="user" placeholder="Name" autocomplete="off"></input>
+            <input type="text" name="email" placeholder="Email" autocomplete="off"></input>
             <button>Submit</button>
         </form>
     <?php endif ?>
