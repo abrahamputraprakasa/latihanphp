@@ -20,7 +20,7 @@
 
 
     // //Insert Biasa
-    // $sql = "INSERT INTO users (email, `name`)
+    // $sql = "INSERT INTO users (`name`, email)
     // VALUES ('$user', '$email')";
 
     // if ($conn->query($sql) === TRUE) {
